@@ -3,7 +3,11 @@
 {% block title %}Tasks{% endblock %}
 
 {% block body %}
-    <h1>Show Task</h1>
+    <h1>{{ task.name }}</h1>
+    <p>
+        Due date: {{ task.dueDate|date('Y-m-d') }}<br>
+        Completed: {{ task.finished }}
+    </p>
 
 {% endblock %}
 
